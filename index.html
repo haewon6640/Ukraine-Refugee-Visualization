@@ -10,15 +10,19 @@
     <script src="https://cdn.amcharts.com/lib/5/geodata/region/world/europeHigh.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
     <link rel="stylesheet" href="./dist/main.css" />
-    
+
     <script type="text/javascript" src="./dist/main.js" charset="utf-8" defer></script>
     <title>Document</title>
 </head>
 <body>
+    <div class="title">Ukrainian Refugee Count From March to June</div>
+    <div id="total-count"></div>
+    <div id="date"></div>
     <div class="slidecontainer">
         <input type="range" min="0" max="11" value="0" class="slider" id="myRange">
     </div>
-    <div id="date"></div>
-    <div id="chartdiv"></div>
+    <div class="chart-container">
+        <div id="chartdiv"></div>
+    </div>
 </body>
 </html>

@@ -1,22 +1,31 @@
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
   \*************************************************************************************************************************************/
+.chart-container {
+  display: flex;
+  justify-content: center;
+}
+
 #chartdiv {
-  width: 100%;
-  height: 500px;
+  width: 600px;
+  height: 600px;
+  border: 5px inset yellow;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px, rgba(0, 0, 0, 0.05) 0px 1px 4px 0px, rgba(0, 0, 0, 0.05) 0px 2px 8px 0px;
 }
 
 .slidecontainer {
-  width: 100%;
+  width: 50%;
+  margin-bottom: 20px;
 }
 
 .slider {
   -webkit-appearance: none;
   width: 100%;
   height: 25px;
-  background: #d3d3d3;
+  background: #696969;
   outline: none;
   opacity: 0.7;
+  cursor: pointer;
   -webkit-transition: 0.2s;
   transition: opacity 0.2s;
 }
@@ -30,13 +39,27 @@
   appearance: none;
   width: 25px;
   height: 25px;
-  background: #04AA6D;
+  background: yellow;
   cursor: pointer;
 }
 
 .slider::-moz-range-thumb {
   width: 25px;
   height: 25px;
-  background: #04AA6D;
+  background: yellow;
   cursor: pointer;
+}
+
+body {
+  background-color: rgb(127, 218, 235);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
 }

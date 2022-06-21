@@ -174,6 +174,9 @@ slider.oninput = function () {
     ]);
 
     polygonSeries.mapPolygons.template.events.on("pointerover", function (ev) {
+        if (!Boolean(ev.target.dataItem.get("value"))) {
+            ev.target._settings.tooltipText = ""
+        }
         mapHeat.hideTooltip();
         mapHeat = heatLegend;
         heatLegend.showValue(ev.target.dataItem.get("value"));

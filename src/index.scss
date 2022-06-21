@@ -1,14 +1,30 @@
-.chart-container {
-  display:flex;
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
 
+aside {
+  font-size: 18px;
+  margin:10px 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+#total-count, #date {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  margin-top: 5px;
+}
+#date {
+  margin-bottom: 10px;
+}
+.chart-container {
+  background-color: rgb(127, 218, 235);
+  display:flex; 
+  color: rgb(138, 57, 0);
   justify-content: center;
 }
 #chartdiv {
   width: 600px;
   height: 600px;
   border: 5px inset yellow;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px, rgba(0, 0, 0, 0.05) 0px 1px 4px 0px, rgba(0, 0, 0, 0.05) 0px 2px 8px 0px;
-    
+  border-radius: 10px;    
   }
 
 .slidecontainer {
@@ -23,6 +39,7 @@
   background: #696969;
   outline: none;
   opacity: 0.7;
+  border-radius: 50px;
   cursor: pointer;
   -webkit-transition: .2s;
   transition: opacity .2s;
@@ -37,6 +54,7 @@
   appearance: none;
   width: 25px;
   height: 25px;
+  border-radius: 50px;
   background: yellow;
   cursor: pointer;
 }
@@ -49,15 +67,19 @@
 }
 
 body {
-  background-color: rgb(127, 218, 235);
+  background-color: rgb(0, 217, 255);
   display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: 'Bakbak One', cursive;
 }
 
 .title {
-  font-size: 20px;
+  font-size: 32px;
   color: black;
   font-weight: bold;
+}
+html {
+  overflow: none;
 }

@@ -28,9 +28,8 @@ const loadChart = () => {
         );
         polygonSeries.mapPolygons.template.setAll({
             tooltipText:
-                "{name} \n Total Refugee: {value} \n Percent Refugees: {percent}",
+                "{name} \n Total Refugees: {value} \n Percent Refugees: {percent}",
         });
-
         polygonSeries.set("heatRules", [
             {
                 target: polygonSeries.mapPolygons.template,
@@ -114,7 +113,7 @@ for (var i = 0; i < country_names.length; i++) {
         value: rpw[0][country_names[i]],
         percent: `${(Math.round(rp[0][country_names[i]] * 10000) / 100).toFixed(
             2
-        )}%`,
+        )}%`
     });
 }
 loadChart(data);
@@ -161,7 +160,7 @@ slider.oninput = function () {
 
     polygonSeries.mapPolygons.template.setAll({
         tooltipText:
-            "{name} \n Total Refugee: {value} \n Percent Refugees: {percent}",
+            "{name} \n Total Refugees: {value} \n Percent Refugees: {percent}",
     });
 
     polygonSeries.set("heatRules", [

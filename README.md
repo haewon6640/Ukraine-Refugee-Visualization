@@ -15,7 +15,7 @@ This project is a data visualization of the Ukrainian refugee movement from Marc
 ### Architecture and Technologies ###
 * Vanilla JavaScript for overall structure and logic
 * Am5Chart for responsive display of data
-* Fetches Data from Humanitarian Data Exchange ![Link](https://data.humdata.org/dataset/ukraine-refugee-situation)
+* Fetches Data from Humanitarian Data Exchange [Link](https://data.humdata.org/dataset/ukraine-refugee-situation)
 * Webpack and Babel to bundle up and serve various scripts
 * Npm to manage packages and dependencies 
 
